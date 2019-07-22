@@ -1,17 +1,29 @@
 {
   "name": "f2echallenge-w2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "src/App.js",
+  "module": "src/App.js",
+  "files": [
+    "src/App.js",
+    "README.md"
+  ],
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "styled-components": "^4.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horsekitlin/f2echallenge-w2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bundle": "babel ./src/App.js --out-file ./dist/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
